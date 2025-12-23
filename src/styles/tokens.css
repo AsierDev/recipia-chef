@@ -1,0 +1,152 @@
+/*
+ * Design Tokens - Recipia Chef
+ * 
+ * Variables CSS centralizadas para todo el sistema de diseño.
+ * Compatible con shadcn/ui (usa nombres sin prefijo).
+ */
+
+:root {
+  /* =========================
+   * BASE - Radio de bordes
+   * ========================= */
+  --radius: 0.625rem;
+
+  /* =========================
+   * COLORS - Light Theme (default)
+   * ========================= */
+
+  /* Primary - Verde cocina fresca */
+  --primary: oklch(65% 0.18 145);
+  --primary-hover: oklch(58% 0.2 145);
+  --primary-foreground: oklch(100% 0 0);
+
+  /* Secondary - Naranja cálido */
+  --secondary: oklch(70% 0.15 55);
+  --secondary-hover: oklch(63% 0.17 55);
+  --secondary-foreground: oklch(100% 0 0);
+
+  /* Surfaces */
+  --background: oklch(99% 0.005 260);
+  --foreground: oklch(15% 0.02 260);
+  --surface: oklch(100% 0 0);
+  --surface-elevated: oklch(100% 0 0);
+
+  /* Muted */
+  --muted: oklch(96% 0.005 260);
+  --muted-foreground: oklch(45% 0.02 260);
+
+  /* Border & Input */
+  --border: oklch(90% 0.01 260);
+  --input: oklch(90% 0.01 260);
+  --ring: oklch(65% 0.18 145);
+
+  /* Destructive */
+  --destructive: oklch(55% 0.22 25);
+  --destructive-foreground: oklch(100% 0 0);
+
+  /* Card */
+  --card: oklch(100% 0 0);
+  --card-foreground: oklch(15% 0.02 260);
+
+  /* Popover */
+  --popover: oklch(100% 0 0);
+  --popover-foreground: oklch(15% 0.02 260);
+
+  /* Accent */
+  --accent: oklch(96% 0.005 260);
+  --accent-foreground: oklch(15% 0.02 260);
+
+  /* Chart colors */
+  --chart-1: oklch(65% 0.18 145);
+  --chart-2: oklch(70% 0.15 55);
+  --chart-3: oklch(60% 0.12 200);
+  --chart-4: oklch(75% 0.14 80);
+  --chart-5: oklch(55% 0.22 25);
+
+  /* Sidebar */
+  --sidebar: oklch(98% 0.005 260);
+  --sidebar-foreground: oklch(15% 0.02 260);
+  --sidebar-primary: oklch(65% 0.18 145);
+  --sidebar-primary-foreground: oklch(100% 0 0);
+  --sidebar-accent: oklch(96% 0.005 260);
+  --sidebar-accent-foreground: oklch(15% 0.02 260);
+  --sidebar-border: oklch(90% 0.01 260);
+  --sidebar-ring: oklch(65% 0.18 145);
+
+  /* =========================
+   * SPACING SCALE
+   * ========================= */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* =========================
+   * TYPOGRAPHY
+   * ========================= */
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  /* =========================
+   * SHADOWS
+   * ========================= */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* =========================
+   * TRANSITIONS
+   * ========================= */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease;
+}
+
+/* =========================
+ * DARK THEME (via .dark class, not media query)
+ * ========================= */
+.dark {
+  --background: oklch(12% 0.01 260);
+  --foreground: oklch(95% 0.01 260);
+  --surface: oklch(18% 0.01 260);
+  --surface-elevated: oklch(22% 0.01 260);
+  --card: oklch(18% 0.01 260);
+  --card-foreground: oklch(95% 0.01 260);
+  --popover: oklch(18% 0.01 260);
+  --popover-foreground: oklch(95% 0.01 260);
+  --muted: oklch(25% 0.01 260);
+  --muted-foreground: oklch(65% 0.01 260);
+  --accent: oklch(25% 0.01 260);
+  --accent-foreground: oklch(95% 0.01 260);
+  --border: oklch(30% 0.01 260);
+  --input: oklch(25% 0.01 260);
+  --ring: oklch(65% 0.18 145);
+  --sidebar: oklch(15% 0.01 260);
+  --sidebar-foreground: oklch(95% 0.01 260);
+  --sidebar-border: oklch(30% 0.01 260);
+}
+
+/* =========================
+ * COOK MODE (dark optimizado para cocina)
+ * ========================= */
+.cook-mode {
+  --background: oklch(8% 0 0);
+  --foreground: oklch(95% 0 0);
+  --surface: oklch(12% 0 0);
+  --surface-elevated: oklch(18% 0 0);
+  --card: oklch(12% 0 0);
+  --card-foreground: oklch(95% 0 0);
+  --popover: oklch(12% 0 0);
+  --popover-foreground: oklch(95% 0 0);
+  --muted: oklch(20% 0 0);
+  --muted-foreground: oklch(70% 0 0);
+  --accent: oklch(20% 0 0);
+  --accent-foreground: oklch(95% 0 0);
+  --border: oklch(25% 0 0);
+  --input: oklch(20% 0 0);
+  --ring: oklch(65% 0.18 145);
+}
