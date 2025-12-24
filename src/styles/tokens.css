@@ -2,76 +2,122 @@
  * Design Tokens - Recipia Chef
  * 
  * Variables CSS centralizadas para todo el sistema de diseño.
- * Compatible con shadcn/ui (usa nombres sin prefijo).
+ * Basado en análisis de mockups y compatible con shadcn/ui.
  */
 
 :root {
   /* =========================
-   * BASE - Radio de bordes
+   * BASE
    * ========================= */
   --radius: 0.625rem;
 
   /* =========================
-   * COLORS - Light Theme (default)
+   * PRIMARY - Verde fresco vibrante
    * ========================= */
-
-  /* Primary - Verde cocina fresca */
-  --primary: oklch(65% 0.18 145);
-  --primary-hover: oklch(58% 0.2 145);
+  --primary: oklch(72% 0.19 145);
+  --primary-hover: oklch(65% 0.21 145);
   --primary-foreground: oklch(100% 0 0);
 
-  /* Secondary - Naranja cálido */
-  --secondary: oklch(70% 0.15 55);
-  --secondary-hover: oklch(63% 0.17 55);
+  /* =========================
+   * SECONDARY - Naranja cálido
+   * ========================= */
+  --secondary: oklch(75% 0.16 55);
+  --secondary-hover: oklch(68% 0.18 55);
   --secondary-foreground: oklch(100% 0 0);
 
-  /* Surfaces */
-  --background: oklch(99% 0.005 260);
-  --foreground: oklch(15% 0.02 260);
-  --surface: oklch(100% 0 0);
+  /* =========================
+   * SURFACES - Fondo crema cálido
+   * ========================= */
+  --background: oklch(98% 0.005 90);
+  --foreground: oklch(20% 0.02 260);
+
+  --surface: oklch(99% 0.003 90);
   --surface-elevated: oklch(100% 0 0);
 
-  /* Muted */
-  --muted: oklch(96% 0.005 260);
+  /* =========================
+   * CARDS - Blanco para contraste
+   * ========================= */
+  --card: oklch(100% 0 0);
+  --card-foreground: oklch(20% 0.02 260);
+
+  /* =========================
+   * POPOVER
+   * ========================= */
+  --popover: oklch(100% 0 0);
+  --popover-foreground: oklch(20% 0.02 260);
+
+  /* =========================
+   * MUTED - Beige claro
+   * ========================= */
+  --muted: oklch(95% 0.01 90);
   --muted-foreground: oklch(45% 0.02 260);
 
-  /* Border & Input */
-  --border: oklch(90% 0.01 260);
-  --input: oklch(90% 0.01 260);
-  --ring: oklch(65% 0.18 145);
+  /* =========================
+   * ACCENT
+   * ========================= */
+  --accent: oklch(95% 0.01 90);
+  --accent-foreground: oklch(20% 0.02 260);
 
-  /* Destructive */
+  /* =========================
+   * BORDERS & INPUTS
+   * ========================= */
+  --border: oklch(88% 0.01 90);
+  --input: oklch(96% 0.01 90);
+  --ring: oklch(72% 0.19 145);
+
+  /* =========================
+   * SEMANTIC COLORS
+   * ========================= */
   --destructive: oklch(55% 0.22 25);
   --destructive-foreground: oklch(100% 0 0);
 
-  /* Card */
-  --card: oklch(100% 0 0);
-  --card-foreground: oklch(15% 0.02 260);
+  --success: oklch(72% 0.19 145);
+  --success-foreground: oklch(100% 0 0);
 
-  /* Popover */
-  --popover: oklch(100% 0 0);
-  --popover-foreground: oklch(15% 0.02 260);
+  --warning: oklch(75% 0.16 55);
+  --warning-foreground: oklch(100% 0 0);
 
-  /* Accent */
-  --accent: oklch(96% 0.005 260);
-  --accent-foreground: oklch(15% 0.02 260);
+  --info: oklch(60% 0.15 250);
+  --info-foreground: oklch(100% 0 0);
 
-  /* Chart colors */
-  --chart-1: oklch(65% 0.18 145);
-  --chart-2: oklch(70% 0.15 55);
-  --chart-3: oklch(60% 0.12 200);
-  --chart-4: oklch(75% 0.14 80);
+  /* =========================
+   * GAMIFICATION - Niveles
+   * ========================= */
+  --level-pinche: oklch(65% 0.1 55);
+  /* Bronce cálido */
+  --level-cocinero: oklch(72% 0.04 260);
+  /* Plata fría */
+  --level-souschef: oklch(78% 0.14 85);
+  /* Oro brillante */
+  --level-chef: oklch(85% 0.08 200);
+  /* Platino azulado */
+
+  /* =========================
+   * AI BADGE
+   * ========================= */
+  --ai-badge: oklch(70% 0.15 280);
+  --ai-badge-foreground: oklch(100% 0 0);
+
+  /* =========================
+   * CHARTS
+   * ========================= */
+  --chart-1: oklch(72% 0.19 145);
+  --chart-2: oklch(75% 0.16 55);
+  --chart-3: oklch(60% 0.15 250);
+  --chart-4: oklch(78% 0.14 85);
   --chart-5: oklch(55% 0.22 25);
 
-  /* Sidebar */
-  --sidebar: oklch(98% 0.005 260);
-  --sidebar-foreground: oklch(15% 0.02 260);
-  --sidebar-primary: oklch(65% 0.18 145);
+  /* =========================
+   * SIDEBAR
+   * ========================= */
+  --sidebar: oklch(97% 0.005 90);
+  --sidebar-foreground: oklch(20% 0.02 260);
+  --sidebar-primary: oklch(72% 0.19 145);
   --sidebar-primary-foreground: oklch(100% 0 0);
-  --sidebar-accent: oklch(96% 0.005 260);
-  --sidebar-accent-foreground: oklch(15% 0.02 260);
-  --sidebar-border: oklch(90% 0.01 260);
-  --sidebar-ring: oklch(65% 0.18 145);
+  --sidebar-accent: oklch(95% 0.01 90);
+  --sidebar-accent-foreground: oklch(20% 0.02 260);
+  --sidebar-border: oklch(88% 0.01 90);
+  --sidebar-ring: oklch(72% 0.19 145);
 
   /* =========================
    * SPACING SCALE
@@ -107,13 +153,13 @@
 }
 
 /* =========================
- * DARK THEME (via .dark class, not media query)
+ * DARK MODE (via .dark class)
  * ========================= */
 .dark {
   --background: oklch(12% 0.01 260);
   --foreground: oklch(95% 0.01 260);
-  --surface: oklch(18% 0.01 260);
-  --surface-elevated: oklch(22% 0.01 260);
+  --surface: oklch(15% 0.01 260);
+  --surface-elevated: oklch(18% 0.01 260);
   --card: oklch(18% 0.01 260);
   --card-foreground: oklch(95% 0.01 260);
   --popover: oklch(18% 0.01 260);
@@ -124,29 +170,34 @@
   --accent-foreground: oklch(95% 0.01 260);
   --border: oklch(30% 0.01 260);
   --input: oklch(25% 0.01 260);
-  --ring: oklch(65% 0.18 145);
+  --ring: oklch(72% 0.19 145);
   --sidebar: oklch(15% 0.01 260);
   --sidebar-foreground: oklch(95% 0.01 260);
   --sidebar-border: oklch(30% 0.01 260);
 }
 
 /* =========================
- * COOK MODE (dark optimizado para cocina)
+ * COOK MODE - Optimizado para cocina
+ * Tema oscuro de alto contraste
  * ========================= */
 .cook-mode {
   --background: oklch(8% 0 0);
-  --foreground: oklch(95% 0 0);
-  --surface: oklch(12% 0 0);
-  --surface-elevated: oklch(18% 0 0);
+  --foreground: oklch(98% 0 0);
+  --surface: oklch(10% 0 0);
+  --surface-elevated: oklch(14% 0 0);
   --card: oklch(12% 0 0);
-  --card-foreground: oklch(95% 0 0);
+  --card-foreground: oklch(98% 0 0);
   --popover: oklch(12% 0 0);
-  --popover-foreground: oklch(95% 0 0);
-  --muted: oklch(20% 0 0);
+  --popover-foreground: oklch(98% 0 0);
+  --muted: oklch(18% 0 0);
   --muted-foreground: oklch(70% 0 0);
-  --accent: oklch(20% 0 0);
-  --accent-foreground: oklch(95% 0 0);
+  --accent: oklch(18% 0 0);
+  --accent-foreground: oklch(98% 0 0);
   --border: oklch(25% 0 0);
-  --input: oklch(20% 0 0);
-  --ring: oklch(65% 0.18 145);
+  --input: oklch(15% 0 0);
+  --ring: oklch(78% 0.22 145);
+
+  /* Primary más brillante en cook mode para visibilidad */
+  --primary: oklch(78% 0.22 145);
+  --primary-hover: oklch(72% 0.24 145);
 }

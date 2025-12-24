@@ -33,6 +33,26 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-surface: var(--surface);
   --color-surface-elevated: var(--surface-elevated);
+
+  /* Semantic Colors */
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+
+  /* Gamification Levels */
+  --color-level-pinche: var(--level-pinche);
+  --color-level-cocinero: var(--level-cocinero);
+  --color-level-souschef: var(--level-souschef);
+  --color-level-chef: var(--level-chef);
+
+  /* AI Badge */
+  --color-ai-badge: var(--ai-badge);
+  --color-ai-badge-foreground: var(--ai-badge-foreground);
+
+  /* Sidebar */
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -41,6 +61,8 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Charts */
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
@@ -110,5 +132,10 @@
       opacity: 0.5;
       transform: scale(1.05);
     }
+  }
+
+  /* Safe area padding for devices with notch/home indicator */
+  .safe-area-pb {
+    padding-bottom: env(safe-area-inset-bottom, 0);
   }
 }
