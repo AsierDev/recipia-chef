@@ -7,7 +7,7 @@ export function createClient() {
 
   if (!url || !key) {
     throw new Error(
-      "Missing SUPABASE env: NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY"
+      "Missing SUPABASE env: NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY",
     );
   }
 
