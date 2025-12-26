@@ -42,6 +42,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# supabase - ignore only temp files
+# supabase - ignore only temp files and auto-generated snapshots
 supabase/.temp/
 supabase/*.log
+supabase/migrations/*remote*.sql
